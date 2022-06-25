@@ -201,13 +201,6 @@ function App() {
       })
     }
 
-    if (!isWordInWordList(currentGuess)) {
-      setCurrentRowClass('jiggle')
-      return showErrorAlert(WORD_NOT_FOUND_MESSAGE, {
-        onClose: clearCurrentRowClass,
-      })
-    }
-
     // enforce hard mode - all guesses must contain all previously revealed letters
     if (isHardMode) {
       const firstMissingReveal = findFirstUnusedReveal(currentGuess, guesses)

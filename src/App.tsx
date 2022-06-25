@@ -8,7 +8,6 @@ import {
   WIN_MESSAGES,
   GAME_COPIED_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
-  WORD_NOT_FOUND_MESSAGE,
   CORRECT_WORD_MESSAGE,
   HARD_MODE_ALERT_MESSAGE,
   DISCOURAGE_INAPP_BROWSER_TEXT,
@@ -20,7 +19,6 @@ import {
   DISCOURAGE_INAPP_BROWSERS,
 } from './constants/settings'
 import {
-  isWordInWordList,
   isWinningWord,
   solution,
   findFirstUnusedReveal,
